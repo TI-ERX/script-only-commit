@@ -13,7 +13,7 @@ _() {
 
   cd "${YEAR}" || exit
   git init
-  echo "**${YEAR}** - Gerado por https://github.com/TI-ERX/script-only-commit" \
+  echo "**${YEAR}** - Generate by https://github.com/TI-ERX/script-only-commit" \
     >README.md
   git add .
   GIT_AUTHOR_DATE="${YEAR}-01-01T18:00:00" \
@@ -26,7 +26,7 @@ _() {
   rm -rf "${YEAR}"
 
   echo
-  echo "Boa, agora verifique seu perifl: https://github.com/${USERNAME}"
+  echo "Good, now check your profile: https://github.com/${USERNAME}"
 } && _
 
 unset -f _
